@@ -1,0 +1,56 @@
+.factTable {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	text-align: center;
+}
+
+.Emptygrid1 {
+	grid-area: 1 / 1 / 3 / 2;
+}
+
+.Teachersnr {
+	grid-area: 1 / 2 / 2 / 3;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.Studentnr {
+	grid-area: 1 / 3 / 2 / 4;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.Coursesnr {
+	grid-area: 1 / 4 / 2 / 5;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.Sidenr {
+	grid-area: 1 / 5 / 2 / 6;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.Teachers {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.Students {
+	grid-area: 2 / 3 / 3 / 4;
+}
+
+.Courses {
+	grid-area: 2 / 4 / 3 / 5;
+}
+
+.SideActivities {
+	grid-area: 2 / 5 / 3 / 6;
+}
+
+.Emptygrid2 {
+	grid-area: 1 / 6 / 3 / 7;
+}

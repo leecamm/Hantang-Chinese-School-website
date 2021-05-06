@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background-repeat: no-repeat;
+		}
+
+		hr {
+			display: block;
+			height: 1px;
+			border: 0;
+			border-top: 1px solid rgb(0, 0, 0);
+			margin: 7% 2;
+			padding: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<center>
+		<h1 class="title" style="color: #3FBF65;">Log In</h1>
+	</center><br>
+	<center>
+		<div id="form" class="form">
+			<form action="SignIn.html" onsubmit="return login()"></form>
+			<form action="index.html" onsubmit="return login()">
+				<!--When Login Successfully, move to HomePage-->
+				<div class="container">
+					<p>Welcome to Hantang school </p>
+				</div><br>
+				<ul>
+					<li class="contents">
+						<label
+							for="email"><b>Email</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" placeholder="Enter Email" name="email" id="email" class="tbxContents" required><br>
+					</li>
+					<li class="contents">
+						<label
+							for="psw"><b>Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="password" placeholder="Enter Password" name="pass" id="pass" class="tbxContents" required><br>
+					</li>
+				</ul>
+				<br>
+				<div class="clearfix">
+					<button type="submit" class="signupbtn">Log In</button>
+				</div>
+
+				<div class="noaccount">
+					<a href="SignUp.html">
+						<br />No account? Create one now...
+					</a>
+				</div>
+			</form>
+		</div>
+		</div>
+	</center>
+
+	<script src="./js/signIn.js"></script>
+
+</body>
+
+</html>

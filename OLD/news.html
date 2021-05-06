@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+imput{
+background-color:white;
+margin:80px;
+padding:20px;
+}
+label{
+background-color:white;
+
+}
+#f1 input[type=submit] {
+    display: none;
+}
+.t1 {
+    border: 2px solid orange;
+    padding: 1px 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="week 11 js assignment.html">Home</a>
+    <a href="#">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <form name="f1" id="f1" action="">
+    <input type="text" class="t1" name="t1" placeholder="Advanced Search"/>
+    <input type="submit" name="b1" value="Find" />
+    </form>
+</div>
+<script>
+
+
+var TRange = null;
+
+function findString(str) {
+  if (str == "news") {
+    location.replace("news.html");
+}
+  if (str == "News") {
+    location.replace("news.html");
+}
+  if (str == "NEWS") {
+    location.replace("news.html");
+}
+  if (str == "home") {
+    location.replace("week 11 js assignment.html");
+}
+if (str == "Home") {
+    location.replace("week 11 js assignment.html");
+}
+if (str == "HOME") {
+    location.replace("week 11 js assignment.html");
+}
+if (str == "contact") {
+    location.replace("contact.html");
+}
+if (str == "Contact") {
+    location.replace("contact.html");
+}
+if (str == "CONTACTS") {
+    location.replace("contact.html");
+}
+if (str == "about") {
+    location.replace("about.html");
+}
+if (str == "About") {
+    location.replace("about.html");
+}
+if (str == "ABOUT") {
+    location.replace("about.html");
+}
+
+    if (window.find) {
+            strFound = self.find(str)
+        if (!strFound) {
+            strFound = self.find(str, 0, 1)
+            while (self.find(str, 0, 1)) continue
+        }
+    }
+    if (!strFound) alert("String '" + str + "' not found!")
+        return;
+};
+
+document.getElementById('f1').onsubmit = function() {
+    findString(this.t1.value);
+    return false;
+};
+</script>
+</body>
+</html>
+
+<h1> news</h1>
+</body>
+</html>

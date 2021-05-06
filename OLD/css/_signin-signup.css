@@ -1,0 +1,101 @@
+.container-lastName {
+	color: rgb(255, 0, 0);
+}
+
+
+/* Sign Up/In form */
+
+input[type=text],
+input[type=password] {
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text],
+input[type=password] {
+	background-color: #ddd;
+	outline: none;
+}
+
+.noaccount a {
+	text-decoration: none;
+}
+
+.clearfix .signupbtn {
+	background-color: #3FBF65;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	border-radius: 8%;
+}
+
+.contents {
+	list-style-type: none;
+	border: none;
+	text-align: center;
+	/*background: #f1f1f1;*/
+}
+
+.tbxContents:hover {
+	width: 12%;
+}
+
+.invalid:focus {
+	border-color: #900;
+	background-color: lightcoral;
+}
+
+input:focus.invalid {
+	outline: none;
+}
+
+.valid:hover {
+	background-color: #22d1ab;
+	width: 12%;
+}
+
+.tbxContents {
+	border-radius: 3%;
+}
+
+
+/* This is the style of error messages */
+
+.error {
+	width: 100%;
+	padding: 0;
+	font-size: 80%;
+	color: white;
+	background-color: #900;
+	border-radius: 0 0 5px 5px;
+	box-sizing: border-box;
+}
+
+.error.active {
+	padding: 0.3em;
+}
+
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+.valid:before {
+	position: relative;
+	left: -35px;
+	content: "&#10004;";
+}
+
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+
+.invalid:before {
+	position: relative;
+	left: -35px;
+	content: "&#10006;";
+}
