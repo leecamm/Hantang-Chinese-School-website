@@ -1,3 +1,5 @@
+# Disclaimer: For this project I only took part in the DESIGN parts, not coding!
+
 Visit the website:
 http://i303476.hera.fhict.nl/hantang/
 
